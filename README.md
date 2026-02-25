@@ -5,6 +5,18 @@
 ![Data Analytics](https://img.shields.io/badge/Data%20Analytics-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Complete-2ECC71?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
+![Dataset](https://img.shields.io/badge/Dataset-Kaggle%20(Fictional)-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)
+![Affiliation](https://img.shields.io/badge/Not%20Affiliated%20with%20Glovo-Portfolio%20Project%20Only-lightgrey?style=for-the-badge)
+
+---
+
+> [!WARNING]
+> **⚠️ DISCLAIMER — Please Read Before Using**
+>
+> - 📂 The dataset used in this project is **fictional** and was sourced from **Kaggle** for practice and learning purposes only.
+> - 🏢 Although **Glovo is a real company**, this project is **not affiliated with, endorsed by, or connected to Glovo** in any way.
+> - 📊 All figures, outlets, product categories, and performance metrics are **simulated** and do **not represent real business data**.
+> - 💼 This project is part of a **personal professional portfolio** and is intended solely to demonstrate practical **data analysis and visualisation skills** in a business context.
 
 ---
 
@@ -12,7 +24,7 @@
 
 ![Glovo Dashboard](./Glovo_Capture.png)
 
-> *An interactive Power BI dashboard analysing Glovo's retail outlet performance across sales, product categories, outlet tiers, and geographic locations — built to surface actionable insights for business strategy.*
+> *An interactive Power BI dashboard analysing simulated retail outlet performance across sales, product categories, outlet tiers, and geographic locations — built to surface actionable insights for business strategy.*
 
 ---
 
@@ -26,13 +38,14 @@
 - [How to Use](#-how-to-use)
 - [Insights & Recommendations](#-insights--recommendations)
 - [Project Structure](#-project-structure)
+- [Disclaimer](#️-disclaimer)
 - [Author](#-author)
 
 ---
 
 ## 🎯 Project Overview
 
-This Power BI dashboard was built to analyse **Glovo's retail outlet and product performance** across multiple dimensions — outlet type, outlet size, product category, fat content, and geographic location tier. The goal was to transform raw transactional data into a clear, interactive visual story that a business stakeholder could use to make informed decisions.
+This Power BI dashboard was built to analyse **simulated retail outlet and product performance data** (styled after Glovo's brand for portfolio presentation) across multiple dimensions — outlet type, outlet size, product category, fat content, and geographic location tier. The goal was to transform raw data into a clear, interactive visual story that a business stakeholder could use to make informed decisions.
 
 ### Business Questions Answered
 
@@ -121,28 +134,30 @@ A detailed matrix showing **per-outlet-tier metrics**:
 
 ## 🗃️ Data Model
 
-The dataset covers retail outlet and product data structured around the following key fields:
+The dataset is a fictional retail grocery dataset sourced from Kaggle, structured around the following key fields:
 
 ```
 📁 Dataset Fields
 ├── 🏪 Outlet Fields
-│   ├── Outlet_Identifier        — Unique outlet ID
+│   ├── Outlet_Identifier         — Unique outlet ID
 │   ├── Outlet_Establishment_Year — Year the outlet was established
-│   ├── Outlet_Size              — Small / Medium / High
-│   ├── Outlet_Location_Type     — Level 1 / Level 2 / Level 3
-│   └── Outlet_Type              — Grocery Store / Supermarket Tier 1–3
+│   ├── Outlet_Size               — Small / Medium / High
+│   ├── Outlet_Location_Type      — Level 1 / Level 2 / Level 3
+│   └── Outlet_Type               — Grocery Store / Supermarket Tier 1–3
 │
 ├── 🛒 Product Fields
-│   ├── Item_Identifier          — Unique product ID
-│   ├── Item_Type                — Category (Fruits, Dairy, Snacks, etc.)
-│   ├── Item_Fat_Content         — Low Fat / Regular
-│   ├── Item_Visibility          — % of display shelf space
-│   └── Item_MRP                 — Maximum Retail Price
+│   ├── Item_Identifier           — Unique product ID
+│   ├── Item_Type                 — Category (Fruits, Dairy, Snacks, etc.)
+│   ├── Item_Fat_Content          — Low Fat / Regular
+│   ├── Item_Visibility           — % of display shelf space
+│   └── Item_MRP                  — Maximum Retail Price
 │
 └── 💰 Performance Fields
-    ├── Item_Outlet_Sales         — Total sales (target variable)
-    └── Rating                   — Customer satisfaction score (1–5)
+    ├── Item_Outlet_Sales          — Total sales (target variable)
+    └── Rating                    — Customer satisfaction score (1–5)
 ```
+
+> 📌 **Note:** All values in this dataset are simulated. This is a well-known practice dataset commonly used in the data analytics and data science community for learning purposes.
 
 ---
 
@@ -154,6 +169,7 @@ The dataset covers retail outlet and product data structured around the followin
 | **Power Query** | Data cleaning, transformation, and shaping |
 | **DAX (Data Analysis Expressions)** | Custom KPI measures and calculated columns |
 | **Excel / CSV** | Source data format |
+| **Kaggle** | Dataset source |
 
 ### DAX Measures Used
 
@@ -185,7 +201,7 @@ Avg Visibility = AVERAGE(Sales[Item_Visibility])
 
 ```bash
 # 1. Clone this repository
-git clone https://github.com/yourusername/glovo-powerbi-dashboard.git
+git clone https://github.com/bawabrian/glovo-powerbi-dashboard.git
 
 # 2. Navigate to the project folder
 cd glovo-powerbi-dashboard
@@ -207,7 +223,7 @@ cd glovo-powerbi-dashboard
 
 ## 💡 Insights & Recommendations
 
-Based on the dashboard analysis, here are the key strategic takeaways:
+> 📌 The following insights are drawn from a **fictional dataset** and are presented as analytical exercises only. They are not real business recommendations for Glovo.
 
 ### 1. 🏪 Double Down on Supermarket Tier 1
 Supermarket Tier 1 outlets generate **Ksh 157.5M** — more than the other three outlet types combined. Investment in maintaining and expanding Tier 1 locations should be the top priority.
@@ -238,20 +254,22 @@ glovo-powerbi-dashboard/
 ├── 📸 Glovo_Capture.png          # Dashboard screenshot (preview)
 ├── 📄 README.md                  # This file
 └── 📁 data/
-    └── glovo_sales_data.csv      # Source dataset (if shareable)
+    └── glovo_sales_data.csv      # Source dataset (Kaggle — fictional)
 ```
 
 ---
 
-## 🤝 Contributing
+## ⚠️ Disclaimer
 
-Contributions, suggestions, and feedback are welcome!
+This project is a **personal portfolio piece** built for learning and skill demonstration purposes only.
 
-1. Fork the repository
-2. Create your feature branch: `git checkout -b feature/your-feature-name`
-3. Commit your changes: `git commit -m 'Add: your feature description'`
-4. Push to the branch: `git push origin feature/your-feature-name`
-5. Open a Pull Request
+| | |
+|---|---|
+| 📂 **Dataset** | Fictional grocery sales dataset sourced from [Kaggle](https://www.kaggle.com). This is **not** real Glovo transactional data. |
+| 🏢 **Brand Usage** | The Glovo name and branding style are used purely for visual context in this portfolio project. This project is **not affiliated with, endorsed by, or connected to Glovo S.L.** in any capacity. |
+| 📊 **Figures & Metrics** | All sales figures, outlet counts, ratings, and performance metrics shown are **simulated**. They do not represent Glovo's actual business performance. |
+| 💼 **Intent** | This project exists solely to showcase **data analysis, Power BI visualisation, and business storytelling skills** in a realistic business context. |
+
 
 ---
 
@@ -259,10 +277,9 @@ Contributions, suggestions, and feedback are welcome!
 
 **Brian Bawa**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://https://www.linkedin.com/in/brian-bawa/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brian-bawa/)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bawabrian)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:brianbawa@gmail.com)
-
 
 
 ---
@@ -271,8 +288,6 @@ Contributions, suggestions, and feedback are welcome!
 
 ⭐ **If you found this project useful, please give it a star!** ⭐
 
-*Built with 💛 using Power BI*
+*Built with 💛 using Power BI · Dataset from Kaggle · Portfolio Project · Not affiliated with Glovo*
 
 </div>
-# Glovo-Data-Analysis
-A Power BI dashboard delivering end-to-end insights into grocery sales performance, product mix, and outlet dynamics to support data-driven decision-making.
