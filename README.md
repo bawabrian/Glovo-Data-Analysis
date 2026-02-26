@@ -4,7 +4,6 @@
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![Data Analytics](https://img.shields.io/badge/Data%20Analytics-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Complete-2ECC71?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 ![Dataset](https://img.shields.io/badge/Dataset-Kaggle%20(Fictional)-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)
 ![Affiliation](https://img.shields.io/badge/Not%20Affiliated%20with%20Glovo-Portfolio%20Project%20Only-lightgrey?style=for-the-badge)
 
